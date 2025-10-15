@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inicio.css" />
+    <link
+      rel="shortcut icon"
+      href="imagenes/icono-upsin.png"
+      type="image/x-icon"
+    />
+    <title>UPSIN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("a[href*=#]:not([href=#])").click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html,body").animate(
+                {
+                  scrollTop: target.offset().top - $("header").outerHeight(),
+                },
+                2000
+              );
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- HEADER: Encabezado principal del sitio -->
+    <header>
+      <a href="#inicio">
+        <img src="imagenes/logo-upsin.png" alt="Logo Upsin" class="img" />
+      </a>
+      <!-- NAV: Menú de navegación <nav> contiene los enlaces de navegación del sitio-->
+      <nav class="header-menu">
+        <ul>
+          <li>
+            <a href="#inicio" class="header-menu-item selected">Inicio</a>
+          </li>
+          <li>
+            <a href="#programa" class="header-menu-item selected">Programa</a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#unidades" class="header-menu-item selected">Unidades ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#unidadI" class="submenu-item">Unidad I</a></li>
+              <li><a href="#unidadII" class="submenu-item">Unidad II</a></li>
+              <li><a href="#unidadIII" class="submenu-item">Unidad III</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-inicio">
+        <div class="contenedor-x">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#programa">Programa</a></li>
+            <li>
+              <a href="#unidades">Unidades</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN: Contenido principal <main> encierra el contenido central del sitio -->
+    <!-- Al ser una One Page, todo el contenido es encerrado-->
+    <main>
+      <!-- SECTION: Agrupa un bloque temático <section> organiza el contenido en temas -->
+      <section id="inicio">
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="contenedor-inicio">
+          <div class="texto-inicio">
+            <h1>Plan de estudios</h1>
+            <h2>Estructura de datos</h2>
+            <p>
+              <strong>Ingeniería en Tecnologías e Innovación Digital</strong
+              ><br />
+              Cuarto cuatrimestre
+            </p>
+          </div>
+          <figure>
+            <img
+              src="imagenes/alumno.png"
+              alt="Alumno de Upsin"
+              class="alumno-upsin"
+            />
+          </figure>
+
+          <img
+            src="imagenes/triangulo-gris.png"
+            alt="Triangulo gris"
+            class="triangulo-gris-1"
+          />
+          <img
+            src="imagenes/triangulo-azul.png"
+            alt="Triangulo azul"
+            class="triangulo-azul-1"
+          />
+          <img
+            src="imagenes/triangulo-gris.png"
+            alt="Triangulo gris"
+            class="triangulo-gris-2"
+          />
+          <img
+            src="imagenes/triangulo-azul.png"
+            alt="Triangulo azul"
+            class="triangulo-azul-2"
+          />
+        </article>
+      </section>
+      <!-- SECTION: Agrupa un bloque temático <section> organiza el contenido en temas -->
+      <section id="programa">
+        <div class="portada-programa">
+          <h1>PROGRAMA DE ASIGNATURA:</h1>
+          <h2>ESTRUCTURA DE DATOS</h2>
+        </div>
+        <div class="contenedor-video">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/cDNMe56I8LU"
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="proposito-aprendizaje">
+          <div class="cuadro-azul">
+            <h4>Propósito de aprendizaje de la Asignatura</h4>
+            <img src="imagenes/lista-blanca.png" />
+          </div>
+          <p>
+            El estudiante implementará algoritmos que utilicen estructuras de
+            datos para mejorar el rendimiento, calidad y mantenibilidad de los
+            sistemas informáticos, a través de la modularidad y escalabilidad
+            que satisfagan las necesidades de la organización.
+          </p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="competencia-asignatura">
+          <div class="cuadro-gris">
+            <h4>Competencia a la que contribuye la asignatura</h4>
+            <img src="imagenes/lista-azul.png" />
+          </div>
+          <p>
+            Desarrollar soluciones tecnológicas multiplataforma de software web
+            y móvil utilizando programación orientada a objetos, frameworks,
+            bases de datos, estándares de calidad y diseño para resolver
+            problemas del sector productivo, con un enfoque de inclusión,
+            compromiso con la responsabilidad social, equidad social y de
+            género, excelencia, vanguardia, innovación social e
+            interculturalidad.
+          </p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-info">
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de competencia</th>
+                <th>Cuatrimestre</th>
+                <th>Créditos</th>
+                <th>Modalidad</th>
+                <th>Horas por semana</th>
+                <th>Horas Totales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Específica</td>
+                <td>4</td>
+                <td>4.69</td>
+                <td>Escolarizada</td>
+                <td>5</td>
+                <td>75</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-contenido">
+          <table>
+            <thead>
+              <tr>
+                <th>Unidades de Aprendizaje</th>
+                <th>Horas del Saber</th>
+                <th>Horas del Saber Hacer</th>
+                <th>Horas Totales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="unidad">
+                  I. Conceptos básicos de estructuras de datos orientadas a
+                  objetos
+                </td>
+                <td>10</td>
+                <td>10</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td class="unidad">II. Estructuras de datos básicas</td>
+                <td>10</td>
+                <td>25</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td class="unidad">III. Estructuras de datos avanzadas</td>
+                <td>10</td>
+                <td>10</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td class="total"><strong>Total</strong></td>
+                <td><strong>30</strong></td>
+                <td><strong>45</strong></td>
+                <td><strong>75</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-funciones">
+          <table>
+            <thead>
+              <tr>
+                <th>Funciones</th>
+                <th>Capacidades</th>
+                <th>Criterios de Desempeño</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  <!-- Abarca dos filas -->
+                  Diseñar soluciones tecnológicas web y móviles con base en un
+                  análisis, utilizando algoritmos y estructuras de datos
+                  eficientes, patrones de diseño, base de datos, experiencia de
+                  usuario, metodologías y estándares con el fin de satisfacer
+                  los requerimientos considerados por la empresa.
+                </td>
+
+                <td>
+                  Realizar el análisis de los requerimientos del software
+                  utilizando estándares y técnicas de recopilación de
+                  información para el levantamiento, la validación y la
+                  especificación de los requerimientos que representen las
+                  necesidades del cliente.
+                </td>
+
+                <td>
+                  Integrar un reporte técnico sobre el análisis de los
+                  requerimientos de software que documente:
+                  <ul>
+                    <li>Identificación de flujos de datos del problema.</li>
+                    <li>Identificación de eventos (casos de uso).</li>
+                    <li>
+                      Identificar y determinar los requerimientos, tanto
+                      funcionales como no funcionales.
+                    </li>
+                    <li>Identificación del alcance</li>
+                    <li>
+                      Validación de requisitos para asegurar su precisión,
+                      completitud y consistencia.
+                    </li>
+                    <li>
+                      Verificar que los requisitos sean factibles de implementar
+                      con las tecnologías disponibles.
+                    </li>
+                    <li>
+                      Identificar y gestionar los riesgos asociados a los
+                      requisitos.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  Realizar el diseño funcional y arquitectónico de la aplicación
+                  utilizando herramientas, estructuras de datos y patrones de
+                  diseño para definir la representación.
+                </td>
+
+                <td>
+                  Integrar un reporte técnico sobre el diseño del software
+                  utilizando diagramas UML que documente:
+                  <ul>
+                    <li>
+                      La definición de las funcionalidades de la aplicación y su
+                      organización en módulos independientes.
+                    </li>
+                    <li>
+                      La descripción de los pasos que los usuarios seguirán para
+                      realizar las diferentes tareas dentro de la aplicación.
+                    </li>
+                    <li>
+                      La especificación de las reglas y lógica que gobiernan el
+                      comportamiento de la aplicación(Reglas del Negocio).
+                    </li>
+                    <li>Arquitectura y Patrones de diseño.</li>
+                    <li>
+                      La identificación de los componentes y servicios que
+                      conforman la aplicación y cómo interactúan entre sí.
+                    </li>
+                    <li>
+                      La selección de las tecnologías y frameworks que se
+                      utilizarán para desarrollar la aplicación.
+                    </li>
+                    <li>
+                      La selección de la estructura de datos adecuada para
+                      representar y organizar la información eficientemente en
+                      la aplicación.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <!-- SECTION: Agrupa un bloque temático <section> organiza el contenido en temas -->
+      <section id="unidades">
+        <div class="portada-unidades">
+          <h1>UNIDADES DE APRENDIZAJE:</h1>
+          <h2>ESTRUCTURA DE DATOS</h2>
+        </div>
+        <div class="texto-unidad" id="unidadI">
+          <h3>Unidad I</h3>
+        </div>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="unidad-aprendizaje">
+          <div class="cuadro-gris">
+            <h4>Unidad <br />de Aprendizaje</h4>
+          </div>
+          <p>
+            I. Conceptos básicos de estructuras de datos orientadas a objetos
+          </p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="proposito-esperado">
+          <div class="cuadro-azul">
+            <h4>Propósito esperado</h4>
+            <img src="imagenes/lista-blanca.png" />
+          </div>
+          <p>
+            El estudiante desarrollará habilidades para implementar estructuras
+            de datos utilizando tipos de datos abstractos, recursividad,
+            arreglos, clases parametrizadas y tipos genéricos con el fin de
+            optimizar la gestión y manipulación de información en entornos de
+            programación.
+          </p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-info">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Horas del Saber</th>
+                <th>Horas del Saber Hacer</th>
+                <th>Horas Totales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiempo Asignado</td>
+                <td>10</td>
+                <td>10</td>
+                <td><strong>20</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-contenido">
+          <table>
+            <thead>
+              <tr>
+                <th>Temas</th>
+                <th>Saber Dimensión Conceptual</th>
+                <th>Saber Hacer Dimensión Actuacional</th>
+                <th>Ser y Convivir Dimensión Socioafectiva</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="unidad">Tipo de datos abstractos</td>
+                <td>Describir los tipos de datos abstractos.</td>
+                <td rowspan="4">
+                  Codificar tipos de datos abstractos.<br />
+                  Implementar recursividad para la solución de problemas.<br />
+                  Programar ejemplos de aplicación de arreglos para la solución
+                  de problemas.<br />
+                  Instanciar estructuras genéricas de distintos tipos.
+                </td>
+                <td rowspan="4">
+                  Desarrollar el razonamiento crítico, lógico<br />
+                  y matemático a través de la resolución de<br />
+                  problemas de programación de manera <br />
+                  individual y/o co laborativa, utilizando arreglos<br />
+                  y recursividad desde la perspectiva de la programación
+                  orientada a objetos.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="unidad">Recursividad</td>
+                <td>
+                  Definir recursividad. <br />
+                  Identificar los tipos de recursividad.
+                </td>
+              </tr>
+              <tr>
+                <td class="unidad">Arreglos</td>
+                <td>
+                  Definir recursividad.<br />
+                  Identificar los tipos de recursividad.
+                </td>
+              </tr>
+              <tr>
+                <td class="unidad">Clases parametrizadas y tipos genéricos</td>
+                <td>
+                  Describir el funcionamiento de los parámetros<br />
+                  de tipo y su relación con la creación de instancias.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-ensenanza-aprendizaje">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" class="proceso">
+                  Proceso Enseñanza-Aprendizaje
+                </th>
+              </tr>
+              <tr>
+                <th rowspan="2">Métodos y técnicas de enseñanza</th>
+                <th rowspan="2">Medios y materiales didácticos</th>
+                <th>Espacio Formativo</th>
+              </tr>
+              <tr>
+                <th class="aula">Aula</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  Prácticas en laboratorio<br />
+                  Estudio de casos<br />
+                  Equipo colaborativo<br />
+                </td>
+
+                <td>
+                  Laboratorio de cómputo<br />
+                  Uso de Internet<br />
+                  Proyector o pantalla<br />
+                  Pizarrón<br />
+                  Bibliografía<br />
+                  Herramientas de programación
+                </td>
+
+                <td>
+                  <strong> Laboratorio / Taller</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-proceso-evaluacion">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" class="proceso">Proceso de Evaluación</th>
+              </tr>
+              <tr>
+                <th>Resultado de Aprendizaje</th>
+                <th>Evidencia de Aprendizaje</th>
+                <th>Instrumentos de evaluación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  Los estudiantes utilizan diversas técnicas y herramientas de
+                  programación, para implementar arreglos, tipos de datos
+                  abstractos y clases parametrizadas.
+                </td>
+
+                <td>
+                  A partir de un portafolio de evidencias implementar
+                  estructuras de datos y lo documenta en un reporte técnico que
+                  incluya:<br />
+                  <strong>-</strong> Introducción: con la descripción general
+                  del problema resuelto.<br />
+                  <strong>-</strong> Propuesta de solución: Descripción de los
+                  tipos de datos abstractos, arreglos, clases parametrizadas,
+                  tipos genéricos utilizados, recursividad y la justificación de
+                  su uso.<br />
+                  <strong>-</strong> Pruebas realizadas. <br />
+                  <strong>-</strong> Conclusiones<br />
+                  <strong>-</strong> Referencias bibliográficas.
+                </td>
+
+                <td>
+                  Ejercicios prácticos<br />
+                  Guía de observación
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <div class="texto-unidad" id="unidadII">
+          <h3>Unidad II</h3>
+        </div>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="unidad-aprendizaje">
+          <div class="cuadro-gris">
+            <h4>Unidad <br />de Aprendizaje</h4>
+          </div>
+          <p>II. Estructuras de datos básicas</p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="proposito-esperado">
+          <div class="cuadro-azul">
+            <h4>Propósito esperado</h4>
+            <img src="imagenes/lista-blanca.png" />
+          </div>
+          <p>
+            El estudiante implementará estructuras de datos básicas, algoritmos
+            de ordenamiento y búsqueda, así como analizar la complejidad de los
+            algoritmos, para diseñar soluciones óptimas en entornos de
+            programación.
+          </p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-info">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Horas del Saber</th>
+                <th>Horas del Saber Hacer</th>
+                <th>Horas Totales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiempo Asignado</td>
+                <td>10</td>
+                <td>25</td>
+                <td><strong>35</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-contenido">
+          <table>
+            <thead>
+              <tr>
+                <th>Temas</th>
+                <th>Saber Dimensión Conceptual</th>
+                <th>Saber Hacer Dimensión Actuacional</th>
+                <th>Ser y Convivir Dimensión Socioafectiva</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="unidad">Estructura de datos dinámica. (Listas)</td>
+                <td class="unidad">
+                  Definir el concepto de estructura de datos dinámica.<br />
+                  Describir las características de las estructuras de datos
+                  dinámicas.<br />
+                  Describir la metodología de codificación de estructuras de
+                  datos dinámicas.<br />
+                  Definir el concepto de listas.<br />
+                  Diferenciar los tipos de listas (simples, dobles y
+                  circulares), sus componentes y su función práctica en la
+                  resolución de problemas.
+                </td>
+                <td>
+                  Programar ejemplos de aplicación utilizando distintos tipos de
+                  listas (simples, dobles y circulares) para la resolución de
+                  problemas.
+                </td>
+                <td rowspan="4" class="unidad">
+                  Desarrollar el razonamiento crítico y lógico<br />
+                  a través de la resolución de problemas de<br />
+                  programación de manera individual y/o<br />
+                  colaborativa, a través de la implementación<br />
+                  de estructuras de datos básicas desde la<br />
+                  perspectiva de la programación orientada<br />
+                  a objetos.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="unidad">Pilas</td>
+                <td class="unidad">
+                  Definir las operaciones que se realizan con listas. <br />
+                  Definir el concepto de pilas.<br />
+                  Comprender los componentes de las pilas y su función práctica
+                  en la resolución de problemas.<br />
+                  Definir las operaciones que se realizan con pilas.
+                </td>
+                <td>
+                  Programar ejemplos de aplicación utilizando pilas para la
+                  resolución de problemas.
+                </td>
+              </tr>
+              <tr>
+                <td class="unidad">Colas</td>
+                <td class="unidad">
+                  Definir el concepto de colas.<br />
+                  Comprender los componentes de las colas y su función práctica
+                  en la resolución de problemas.<br />
+                  Definir las operaciones que se realizan con colas.
+                </td>
+                <td>
+                  Programar ejemplos de aplicación utilizando colas para la
+                  resolución de problemas.
+                </td>
+              </tr>
+              <tr>
+                <td class="unidad">Algoritmos básicos de ordenamiento</td>
+                <td class="unidad">
+                  Describir los algoritmos básicos de ordenamiento.<br />
+                  Describir los algoritmos básicos de búsqueda.<br />
+                  Describir los algoritmos básicos de recorrido.<br />
+                  Comprender la complejidad algorítmica de búsqueda y
+                  ordenamiento.
+                </td>
+                <td>
+                  Codificar algoritmos de ordenamiento, búsqueda y recorrido con
+                  la estructura de datos adecuada referente al caso de estudio.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-ensenanza-aprendizaje">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" class="proceso">
+                  Proceso Enseñanza-Aprendizaje
+                </th>
+              </tr>
+              <tr>
+                <th rowspan="2">Métodos y técnicas de enseñanza</th>
+                <th rowspan="2">Medios y materiales didácticos</th>
+                <th>Espacio Formativo</th>
+              </tr>
+              <tr>
+                <th class="aula">Aula</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  Prácticas en laboratorio<br />
+                  Estudio de casos<br />
+                  Simulación<br />
+                </td>
+
+                <td>
+                  Laboratorio de cómputo<br />
+                  Uso de Internet<br />
+                  Proyector o pantalla<br />
+                  Pizarrón<br />
+                  Bibliografía<br />
+                  Simuladores interactivos<br />
+                  Herramientas de programación
+                </td>
+
+                <td>
+                  <strong> Laboratorio / Taller</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-proceso-evaluacion">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" class="proceso">Proceso de Evaluación</th>
+              </tr>
+              <tr>
+                <th>Resultado de Aprendizaje</th>
+                <th>Evidencia de Aprendizaje</th>
+                <th>Instrumentos de evaluación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  Los estudiantes elaboran programas que contengan estructuras
+                  de datos básicas, métodos de búsqueda y ordenamiento para la
+                  resolución de casos prácticos.
+                </td>
+
+                <td>
+                  A partir de un caso práctico implementar estructuras de datos
+                  básicas y lo documenta en un reporte técnico que incluya:<br />
+                  <strong>-</strong> Introducción: con la descripción general
+                  del problema resuelto.<br />
+                  <strong>-</strong> Diseño de la propuesta de solución:
+                  Descripción de las estructuras de datos básicas, algoritmos de
+                  ordenamiento y búsqueda utilizados y análisis de la
+                  complejidad de los algoritmos utilizados. su uso.<br />
+                  <strong>-</strong> Pruebas realizadas. <br />
+                  <strong>-</strong> Conclusiones<br />
+                  <strong>-</strong> Referencias bibliográficas.
+                </td>
+
+                <td>
+                  Estudio de casos<br />
+                  Rúbrica
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <div class="texto-unidad" id="unidadIII">
+          <h3>Unidad III</h3>
+        </div>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="unidad-aprendizaje">
+          <div class="cuadro-gris">
+            <h4>Unidad <br />de Aprendizaje</h4>
+          </div>
+          <p>III. Estructuras de datos avanzadas</p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="proposito-esperado">
+          <div class="cuadro-azul">
+            <h4>Propósito esperado</h4>
+            <img src="imagenes/lista-blanca.png" />
+          </div>
+          <p>
+            El estudiante implementará estructuras de datos avanzadas para
+            diseñar soluciones óptimas en entornos de programación.
+          </p>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-info">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Horas del Saber</th>
+                <th>Horas del Saber Hacer</th>
+                <th>Horas Totales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiempo Asignado</td>
+                <td>10</td>
+                <td>10</td>
+                <td><strong>20</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-contenido">
+          <table>
+            <thead>
+              <tr>
+                <th>Temas</th>
+                <th>Saber Dimensión Conceptual</th>
+                <th>Saber Hacer Dimensión Actuacional</th>
+                <th>Ser y Convivir Dimensión Socioafectiva</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="unidad">Árboles</td>
+                <td class="unidad">
+                  Definir el concepto de árboles.<br />
+                  Comprender los componentes de árboles y su función práctica en
+                  la resolución de problemas.<br />
+                  Definir las operaciones que se realizan con árboles.<br />
+                  Diferenciar los algoritmos de recorrido en árboles.
+                </td>
+                <td>
+                  Programar ejemplos de aplicación utilizando árboles para la
+                  resolución de problemas.
+                </td>
+                <td rowspan="3" class="unidad">
+                  Desarrollar el razonamiento crítico y lógico<br />
+                  a través de la resolución de problemas de<br />
+                  programación de manera individual y/o<br />
+                  colaborativa, a través de la implementación<br />
+                  de estructuras de datos básicas desde la<br />
+                  perspectiva de la programación orientada<br />
+                  a objetos.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="unidad">Diccionarios</td>
+                <td class="unidad">
+                  Definir el concepto de diccionario como estructura de
+                  datos.<br />
+                  Comprender los componentes de diccionarios y su función
+                  práctica en la resolución de problemas.<br />
+                  Definir las operaciones que se realizan con diccionarios.
+                </td>
+                <td>
+                  Programar ejemplos de aplicación utilizando diccionarios para
+                  la resolución de problemas.
+                </td>
+              </tr>
+              <tr>
+                <td class="unidad">Conjuntos</td>
+                <td class="unidad">
+                  Definir el concepto de conjuntos como estructura de datos.<br />
+                  Comprender los componentes de conjuntos y su función práctica
+                  en la resolución de problemas.<br />
+                  Definir las operaciones que se realizan con conjuntos.
+                </td>
+                <td>
+                  Programar ejemplos de aplicación utilizando conjuntos para la
+                  resolución de problemas.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-ensenanza-aprendizaje">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" class="proceso">
+                  Proceso Enseñanza-Aprendizaje
+                </th>
+              </tr>
+              <tr>
+                <th rowspan="2">Métodos y técnicas de enseñanza</th>
+                <th rowspan="2">Medios y materiales didácticos</th>
+                <th>Espacio Formativo</th>
+              </tr>
+              <tr>
+                <th class="aula">Aula</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  Prácticas en laboratorio<br />
+                  Estudio de casos<br />
+                  Equipo colaborativo<br />
+                </td>
+
+                <td>
+                  Laboratorio de cómputo<br />
+                  Uso de Internet<br />
+                  Proyector o pantalla<br />
+                  Pizarrón<br />
+                  Bibliografía<br />
+                  Herramientas de programación
+                </td>
+
+                <td>
+                  <strong> Laboratorio / Taller</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- ARTICLE: Contenido independiente, que podría existir por sí mismo -->
+        <article class="tabla-proceso-evaluacion">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4" class="proceso">Proceso de Evaluación</th>
+              </tr>
+              <tr>
+                <th>Resultado de Aprendizaje</th>
+                <th>Evidencia de Aprendizaje</th>
+                <th>Instrumentos de evaluación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  Los estudiantes elaboran programas que contengan estructuras
+                  de datos avanzadas y métodos de búsqueda para la resolución de
+                  casos prácticos.
+                </td>
+
+                <td>
+                  A partir de un caso práctico implementar estructuras de datos
+                  avanzadas y lo documenta en un reporte técnico que incluya:<br />
+                  <strong>-</strong> Introducción: con la descripción general
+                  del problema resuelto.<br />
+                  <strong>-</strong> Diseño de la propuesta de solución:
+                  Descripción de las estructuras de datos utilizadas (árboles,
+                  diccionarios y/o conjuntos) y métodos de búsqueda.<br />
+                  Incluyendo la justificación del diseño propuesto.<br />
+                  <strong>-</strong> Pruebas realizadas. <br />
+                  <strong>-</strong> Conclusiones<br />
+                  <strong>-</strong> Referencias bibliográficas.
+                </td>
+
+                <td>
+                  Proyecto grupal<br />
+                  Rúbrica
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+    <!-- FOOTER: Pie de página <footer> se usa para colocar información final y créditos -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <img
+            src="imagenes/logo-upsin-blanco.jpg"
+            alt="UPSIN Logo"
+            class="footer-logo"
+          />
+          <p>
+            <strong>Upsin</strong> (Universidad Politécnica de Sinaloa) es una
+            universidad pública dedicada a la innovación, la tecnología y el
+            desarrollo profesional.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Links Rapidos</h3>
+          <ul>
+            <strong></strong>
+            <li>
+              <a href="#inicio"><strong>- Inicio</strong></a>
+            </li>
+            <li>
+              <a href="#programa"><strong>- Programa</strong></a>
+            </li>
+            <li>
+              <a href="#unidades"><strong>- Unidades</strong></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section contacto">
+          <h3>Contáctanos</h3>
+          <p>📞 (669) 180 0695</p>
+          <p>
+            📍 Carretera Municipal Libre Mazatlán Higueras<br />
+            Km 3 Colonia Genaro Estrada C.P. 82199<br />
+            Mazatlán, Sinaloa, México.
+          </p>
+          <nav class="social-icons">
+            <a
+              href="https://www.instagram.com/upsinoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><i><img src="imagenes/icono-instagram.png" alt="Instagram" /></i
+            ></a>
+            <a href="https://www.facebook.com/upsinoficial/"
+              ><i><img src="imagenes/icono-facebook.png" alt="Facebook" /></i
+            ></a>
+            <a href="https://upsin.edu.mx/"
+              ><i><img src="imagenes/icono-upsin.png" alt="Upsin" /></i
+            ></a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 UPSIN. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
