@@ -108,7 +108,7 @@ header .img {
 }
 
 .header-menu .header-menu-item:hover {
-  color: #2b4d77; /* color de texto al pasar el cursor */
+  color: #2b4d77;
 }
 
 .header-menu .header-menu-item.selected:hover {
@@ -254,11 +254,11 @@ header .img {
 .texto-inicio {
   position: absolute;
   right: 18%;
-  top: 45%; /* centrado verticalmente */
+  top: 45%; 
   transform: translateY(-50%); /* ajusta el centrado exacto */
   text-align: left;
   color: #fff;
-  z-index: 5; /* ncima de las figuras */
+  z-index: 5; 
 }
 
 .texto-inicio h1 {
