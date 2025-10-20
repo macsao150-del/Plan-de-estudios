@@ -37,18 +37,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 5vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
-  position: fixed; /* Lo mantiene arriba */
-  top: 0;
-  left: 0;
-  width: 100%;
   min-height: 5rem;
   background: #fff;
   box-shadow: 0 0 1px #171a1f12, 0 0 2px #171a1f1f;
-  align-items: center;
 }
 
 header .img {
